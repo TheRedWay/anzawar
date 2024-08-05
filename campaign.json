@@ -1,0 +1,40 @@
+{
+	"The_Second_war":
+	{
+		"Ovleks":
+		{
+			"Always_visible": 1,
+			
+			"Frames":
+			{
+				"// Comment_1": "Кадр анимации, если в уровень ещё не играли",
+				"Default": 0,
+				
+				"// Comment_2": "Кадры анимации в зависимости от очков Саммерсетшира, if Score4 >= 0, то 1 кадр, else if Score4 >= 1, то 2 кадр, else if Score4 >= 40, то 3 кадр и т. д.",
+				"Score": ["Default", 0, 1, 40, 75, 100],
+				
+				"From_other_levels":
+				{
+					"March":
+					{
+						"Frame_from": 1,
+						"Frame_this": 5,
+						
+						"//Comment_3": "Если кадр March >= 1 то ставится кадр 5 (для Ovleks)"
+					},
+					
+					"Lagnau":
+					{
+						"Frame_from": 3,
+						"Frame_this": 6
+					}
+				}
+			}
+		},
+		
+		"Alnozia":
+		{
+			
+		}
+	}
+}

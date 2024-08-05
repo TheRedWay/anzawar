@@ -1,0 +1,50 @@
+{
+	"armor_types": {
+		"Light": {
+			"damage_from": {
+				"Melee": 1,
+				"Ranged": 1,
+				"Siege": 1,
+				"Piercing": 1
+			}
+		},
+		"Medium": {
+			"damage_from": {
+				"Melee": 0.9,
+				"Ranged": 0.75,
+				"Siege": 1,
+				"Piercing": 1
+			}
+		},
+		"Heavy": {
+			"damage_from": {
+				"Melee": 0.75,
+				"Ranged": 0.5,
+				"Siege": 1,
+				"Piercing": 1
+			}
+		},
+		"Ship": {
+			"damage_from": {
+				"Melee": 0,
+				"Ranged": 0.5,
+				"Siege": 1,
+				"Piercing": 0.75
+			}
+		},
+		"Armored": {
+			"damage_from": {
+				"Melee": 0.25,
+				"Ranged": 0.25,
+				"Siege": 1,
+				"Piercing": 0.25
+			}
+		}
+	},
+	"attack_types": [
+		"Melee",
+		"Ranged",
+		"Siege",
+		"Piercing"
+	]
+}

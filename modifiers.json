@@ -1,0 +1,108 @@
+{
+	"Extra_supply":
+	{
+		"icon": "Supply",
+		"unit_effect_icon": "Supply",
+		"evaluation": "Positive",
+		
+		"name": "Дополнительные припасы",
+		"desc": "Каждый солдат этого отряда носит дополнительный сухой паёк",
+		"effect": "[color=rgb(0, 175, 0)]+6 к снабжению",
+		
+		"Self_supply": 6
+	},
+
+	"Counterattack":
+	{
+		"icon": "Sword",
+		"unit_effect_icon": "Attack",
+		"evaluation": "Positive",
+		
+		"name": "Контратака",
+		"desc": "Этот юнит готов нанести внезапный удар по противнику",
+		"effect": "[color=rgb(0, 175, 0)]+1 к движению",
+		
+		"Move": 1
+	},
+	
+	"Shock":
+	{
+		"icon": "Arrow",
+		"unit_effect_icon": "Move",
+		"evaluation": "Positive",
+		
+		"name": "Натиск",
+		"desc": "Этот юнит перегруппировался для нанесения стремительного удара по врагу, но он не может атаковать вечно",
+		"effect": "[color=rgb(0, 175, 0)]+2 к движению",
+		
+		"Move": 2
+	},
+	
+	"Shock_weaken":
+	{
+		"icon": "Arrow_down",
+		"unit_effect_icon": "Move",
+		"evaluation": "Negative",
+		
+		"name": "Ослабленный натиск",
+		"desc": "Этот юнит исчерпал потенциал наступления",
+		"effect": "[color=rgb(150, 0, 0)]-1 к движению",
+		
+		"Move": -1
+	},
+	
+	"Conquestor":
+	{
+		"icon": "Fire",
+		"unit_effect_icon": "Supply",
+		"evaluation": "Negative",
+		
+		"name": "Завоеватель",
+		"desc": "Местные жители встречают этого юнита как завоевателя, то есть ничем с ним не делятся",
+		"effect": "[color=rgb(150, 0, 0)]-50% к восстановлению от местности",
+		
+		"Terrain_regen_mod": -0.5
+	},
+	
+	"Aggresive_scouting":
+	{
+		"icon": "Sword",
+		"unit_effect_icon": "Attack",
+		"evaluation": "Positive",
+		
+		"name": "Агрессивная разведка",
+		"desc": "Этот юнит хорошо вооружён и снабжён, поэтому он будет действовать эффективнее",
+		"effect": "[color=rgb(0, 175, 0)]+10 восстановления\n+50% бонус к атаке",
+		
+		"Regen": 10,
+		"Atk_mod": 0.5
+	},
+	
+	"Initiative":
+	{
+		"icon": "Star",
+		"unit_effect_icon": "Attack",
+		"evaluation": "Positive",
+		
+		"name": "Инициатива",
+		"desc": "Юнит находится в составе ударной наступающей армии",
+		"effect": "[color=rgb(0, 175, 0)]+50% к атаке",
+		
+		"Atk_mod": 0.5
+	},
+	
+	"Recovery":
+	{
+		"icon": "Heart",
+		"unit_effect_icon": "Regeneration",
+		"evaluation": "Positive",
+		
+		"name": "Пополнение",
+		"desc": "Юнит быстрее восполняет свою боеспособность, однако он более уязвим",
+		"effect": "[color=rgb(0, 175, 0)]+10 к восст.[/color]\n[color=rgb(150,0,0)]-50% к броне\n-25% к силе",
+		
+		"Regen": 10,
+		"Power_mod": -0.25,
+		"Armor": -0.5
+	}
+}

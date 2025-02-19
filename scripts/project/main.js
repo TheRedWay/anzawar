@@ -1,29 +1,50 @@
 /*
+import * as Utils from "./utilities.js";
 
-import {Battle_tick} from "./battles.js";
+// Битва
+import { battle_tick } from "./battle.js";
+import { battle_start } from "./battle.js";
 
+export let keyboard;
 
-let Menu_Layouts = ["Eidos", "Loader", "Menu", "Campaign", "Ending", "Win"];
+const Menu = ["Test", "Eidos", "Loader", "Campaign", "Menu", "Win", "Ending"];
 
 runOnStartup(async runtime =>
 {
-	// Код который запускается на этапе загрузки.
-	// Обратите внимание, что макеты, объекты и т.д. пока недоступны.
-	
+	// Loader layout
+	// Ничего не доступно
 	runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime));
+	
 });
 
-async function OnBeforeProjectStart(runtime) // On start of Layout
+async function OnBeforeProjectStart(runtime)
 {
-	runtime.addEventListener("tick", () => Tick(runtime));
-}
-
-function Tick(runtime) // Every Tick
-{
-	if (!Menu_Layouts.includes(runtime.layout.name)) // Только для битв
+	// On start of layout
+	//Всё доступно
+	
+	keyboard = runtime.keyboard;
+	
+	setTimeout(() => {
+    
+	if (!(runtime.layout.name in Menu)) // Стартовый ивент - битвы
 	{	
-		Battle_tick(runtime);
+		battle_start(runtime);
 	}
-}
 
+	runtime.addEventListener("tick", () => Tick(runtime));
+	
+	}, 100);
+
+};
+
+
+function Tick(runtime)
+{
+	
+	if (!(runtime.layout.name in Menu)) // Every Tick - битвы
+	{	
+		battle_tick(runtime);
+	}
+	
+}
 */
